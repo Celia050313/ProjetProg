@@ -8,6 +8,8 @@ namespace View{
     public class View : Observable {
 
         public View() {
+
+            //jj
         }
 
 
