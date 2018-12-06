@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salle", "Salle\Salle.csproj", "{070E7AF6-930D-4285-A771-1C35B11063F0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControllerSimulation", "ControllerSimulation\ControllerSimulation.csproj", "{A4D2B402-6095-4CA4-8762-AC8C503D1205}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSimulation", "ControllerSimulation\ControllerSimulation.csproj", "{A4D2B402-6095-4CA4-8762-AC8C503D1205}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControllerSupervision", "ControllerSupervision\ControllerSupervision.csproj", "{75D8F0E3-4C7C-4442-9466-8EEE636D32B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSupervision", "ControllerSupervision\ControllerSupervision.csproj", "{75D8F0E3-4C7C-4442-9466-8EEE636D32B1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{6B998273-E7B3-45C0-A841-B98445D1BBC9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{6B998273-E7B3-45C0-A841-B98445D1BBC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{F1EF52D6-0FB7-451D-911B-E365FAC2195B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,11 +35,12 @@ Global
 		{6B998273-E7B3-45C0-A841-B98445D1BBC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B998273-E7B3-45C0-A841-B98445D1BBC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B998273-E7B3-45C0-A841-B98445D1BBC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1EF52D6-0FB7-451D-911B-E365FAC2195B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1EF52D6-0FB7-451D-911B-E365FAC2195B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1EF52D6-0FB7-451D-911B-E365FAC2195B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1EF52D6-0FB7-451D-911B-E365FAC2195B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {970DB093-C78E-4B6B-AE71-F29EAE8500CE}
 	EndGlobalSection
 EndGlobal
