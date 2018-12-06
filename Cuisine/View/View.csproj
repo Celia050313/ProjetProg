@@ -6,9 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CefSharp.WinForms" Version="69.0.0" />
+    <Compile Remove="New Folder\**" />
+    <EmbeddedResource Remove="New Folder\**" />
+    <None Remove="New Folder\**" />
   </ItemGroup>
+
   <ItemGroup>
-    <Folder Include="New Folder\" />
+    <PackageReference Include="CefSharp.WinForms" Version="69.0.0" />
   </ItemGroup>
 </Project>
