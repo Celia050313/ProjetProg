@@ -1,17 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuisine", "Cuisine\Cuisine.csproj", "{6D6CC2CC-C268-4405-A056-33EBF2351831}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSimulation", "ControllerSimulation\ControllerSimulation.csproj", "{9A234654-1D44-46BF-9D84-810107A40F39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControllerSimulation", "ControllerSimulation\ControllerSimulation.csproj", "{9A234654-1D44-46BF-9D84-810107A40F39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{5622398A-606A-42EB-B075-9E001DF9406A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{5622398A-606A-42EB-B075-9E001DF9406A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSupervision", "ControllerSupervision\ControllerSupervision.csproj", "{5CFFCCA4-C7E8-47F7-A7DA-0307D1670626}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControllerSupervision", "ControllerSupervision\ControllerSupervision.csproj", "{5CFFCCA4-C7E8-47F7-A7DA-0307D1670626}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{7330354B-20CB-42C2-8CEA-48136F319B4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "View", "View\View.csproj", "{7330354B-20CB-42C2-8CEA-48136F319B4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewWin", "ViewWin\ViewWin.csproj", "{3AAC99BF-7064-4F93-8945-D579069F74D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,8 +41,15 @@ Global
 		{7330354B-20CB-42C2-8CEA-48136F319B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7330354B-20CB-42C2-8CEA-48136F319B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7330354B-20CB-42C2-8CEA-48136F319B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AAC99BF-7064-4F93-8945-D579069F74D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AAC99BF-7064-4F93-8945-D579069F74D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AAC99BF-7064-4F93-8945-D579069F74D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AAC99BF-7064-4F93-8945-D579069F74D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2891663-7BBB-4010-B4F2-752B7DA9D4AB}
 	EndGlobalSection
 EndGlobal
