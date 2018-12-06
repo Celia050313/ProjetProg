@@ -13,7 +13,7 @@ namespace ControllerSimulation{
 
 
         public void supprimerIngredient() {
-            // TODO implement here test
+            // TODO implement here
         }
 
     }
