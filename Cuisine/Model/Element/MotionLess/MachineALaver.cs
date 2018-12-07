@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace View.Element.Motionless{
-    public class MachineALaver : MotionLessElements {
+namespace Model.Element.Motionless{
+    public class MachineALaver : Machine {
 
         public MachineALaver() {
         }
@@ -13,10 +13,6 @@ namespace View.Element.Motionless{
         public int Contenance;
 
         public void Time;
-
-        public void MachineALaver() {
-            // TODO implement here
-        }
 
         public void clone() {
             // TODO implement here

@@ -4,40 +4,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace View.Element.Motionless{
+namespace Model.Element.Motionless{
     public class MotionLessFactory {
+
+
 
         public MotionLessFactory() {
         }
 
+        // instantiation of the motionless elements
+        private static ChefDeCuisine chefDeCuisine = new ChefDeCuisine();
+        private static ComptoirCommande comptoirCommande = new ComptoirCommande();
+        private static ComptoirRetour comptoirRetour = new ComptoirRetour();
+        private static Evier evier = new Evier();
+        private static Stock stock = new Stock();
 
 
-        /// <summary>
-        /// @return
-        /// </summary>
-        public MotionLessElement createComptoire() {
-            // TODO implement here
-            return null;
+
+
+        public static MotionLessElements createComptoireRetour() {
+            return comptoirRetour;
         }
 
-        public void createChefDeCuisine() {
-            // TODO implement here
+        public static MotionLessElements createChefDeCuisine() {
+            return chefDeCuisine;
         }
 
-        public void createEvier() {
-            // TODO implement here
+        public static MotionLessElements createEvier() {
+            return evier;
         }
 
-        public void createStock() {
-            // TODO implement here
+        public static MotionLessElements createStock() {
+            return stock;
         }
 
-        public void createComptoirCommande() {
-            // TODO implement here
-        }
-
-        public void createLaveVaisselle() {
-            // TODO implement here
+        public static MotionLessElements createComptoirCommande() {
+            return comptoirCommande;
         }
 
         /// <summary>

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace View.Element.Motionless{
+namespace Model.Element.Motionless{
     public class ComptoirRetour : MotionLessElements {
 
         public ComptoirRetour() {
@@ -15,10 +15,6 @@ namespace View.Element.Motionless{
         public int NbAssiettes;
 
         public int NbVerres;
-
-        public void ComptoirRetour() {
-            // TODO implement here
-        }
 
         public void getCommandeSalle() {
             // TODO implement here

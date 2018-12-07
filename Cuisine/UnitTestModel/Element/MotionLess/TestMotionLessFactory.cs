@@ -7,8 +7,10 @@ namespace UnitTestModel.Element.MotionLess
     public class TestMotionLessFactory
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestCreateChefDeCuisine()
         {
+            var result = MotionLessFactory.createChefDeCuisine();
+            Assert.IsInstanceOfType(result, typeof(ChefDeCuisine));
         }
     }
 }

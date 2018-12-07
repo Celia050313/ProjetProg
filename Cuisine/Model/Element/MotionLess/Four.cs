@@ -4,20 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace View.Element.Motionless{
-    public class Four : MotionLessElements {
+namespace Model.Element.Motionless{
+    public class Four : Machine {
+
+        public bool Utilise;
 
         public Four() {
         }
 
-        public bool Utilise;
-
-        public void Four() {
-            // TODO implement here
-        }
-
-        public void clone() {
-            // TODO implement here
+        public override Machine clone() {
+            return (Machine)this.MemberwiseClone();
         }
 
     }

@@ -62,10 +62,10 @@
     <Compile Include="Element\MotionLess\TestLaveVaisselle.cs" />
     <Compile Include="Element\MotionLess\TestMachine.cs" />
     <Compile Include="Element\MotionLess\TestMachineALaver.cs" />
-    <Compile Include="Element\MotionLess\TestMotionLessElements.cs" />
     <Compile Include="Element\MotionLess\TestMotionLessFactory.cs" />
     <Compile Include="Element\MotionLess\TestPlonge.cs" />
     <Compile Include="Element\MotionLess\TestStock.cs" />
+    <Compile Include="Element\Motion\TestMotionFactory.cs" />
     <Compile Include="Element\TestElement.cs" />
     <Compile Include="Element\TestImg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,7 +76,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Element\Motion\" />
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{5622398a-606a-42eb-b075-9e001df9406a}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

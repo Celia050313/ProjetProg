@@ -4,14 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace View.Element.Motionless{
-    public class Machine : MotionLessElements {
+namespace Model.Element.Motionless{
+    public abstract class Machine : MotionLessElements {
 
         public Machine() {
-        }
-
-        public void Machine() {
-            // TODO implement here
         }
 
         public void etat() {
@@ -22,9 +18,7 @@ namespace View.Element.Motionless{
             // TODO implement here
         }
 
-        public void clone() {
-            // TODO implement here
-        }
+        public abstract Machine clone();
 
     }
 }

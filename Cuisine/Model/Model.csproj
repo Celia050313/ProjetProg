@@ -6,8 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Element\" />
     <Folder Include="Element\MotionLess\" />
-    <Folder Include="Element\Motion\" />
   </ItemGroup>
 </Project>
