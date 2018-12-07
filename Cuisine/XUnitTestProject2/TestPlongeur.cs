@@ -1,9 +1,10 @@
 using System;
 using Xunit;
 
-namespace XUnitTestProjectCuisine
+namespace XUnitTestControllerSimu
+
 {
-    public class TestFacadeControllerSimu
+    public class TestPlongeur
 
 
     {
