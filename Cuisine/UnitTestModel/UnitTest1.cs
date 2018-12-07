@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace UnitTestModel
 {
     [TestClass]
-    public class TestADO
+    public class UnitTest1
     {
         [TestMethod]
         public void TestMethod1()
