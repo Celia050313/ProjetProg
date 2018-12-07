@@ -44,9 +44,7 @@ namespace Model{
             return null;
         }
 
-        public void Operation1() {
-            // TODO implement here
-        }
+
 
     }
 }

@@ -30,7 +30,7 @@ namespace View.Element{
         /// </summary>
         public void setImg() {
             // TODO implement here
-            return null;
+
         }
 
     }

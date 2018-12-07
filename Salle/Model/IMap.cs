@@ -6,8 +6,22 @@ using System.Text;
 
 public interface IMap {
 
-    public void Operation1();
+    public void setMobileHasChanged()
+    {
 
-    public void Operation2();
+        if (Element.Moved == true)
+        {
+
+        }
+
+
+
+    }
+
+    public void getOnTheMapXY()
+    {
+
+
+    }
 
 }
