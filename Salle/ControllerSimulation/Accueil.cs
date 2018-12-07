@@ -7,7 +7,7 @@ using System.Text;
 namespace ControllerSimulation{
     public class Accueil {
 
-        public Accueil() {
+        public void accueil() {
 
         }
 
