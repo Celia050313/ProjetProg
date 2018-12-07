@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ProjetTestModel
+namespace TestProjetModel
 {
     [TestClass]
     public class UnitTest1

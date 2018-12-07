@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewWin", "WindowsFormsApp1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjetsContrrollerSimu", "XUnitTestProject1\TestProjetsContrrollerSimu.csproj", "{2DAD3251-90AE-4A05-8BD6-547D29C311A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetTestModel", "ProjetTestModel\ProjetTestModel.csproj", "{69EF0F5C-7E16-4F78-9065-1325186C99DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjetModel", "TestProjetModel\TestProjetModel.csproj", "{397ED25B-E506-4043-9F8C-14393D6254D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +53,10 @@ Global
 		{2DAD3251-90AE-4A05-8BD6-547D29C311A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DAD3251-90AE-4A05-8BD6-547D29C311A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DAD3251-90AE-4A05-8BD6-547D29C311A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69EF0F5C-7E16-4F78-9065-1325186C99DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69EF0F5C-7E16-4F78-9065-1325186C99DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69EF0F5C-7E16-4F78-9065-1325186C99DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69EF0F5C-7E16-4F78-9065-1325186C99DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{397ED25B-E506-4043-9F8C-14393D6254D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397ED25B-E506-4043-9F8C-14393D6254D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397ED25B-E506-4043-9F8C-14393D6254D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397ED25B-E506-4043-9F8C-14393D6254D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
