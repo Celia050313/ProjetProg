@@ -1,17 +1,15 @@
-
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using Model.Element;
 
-namespace ControllerSimulation{
+namespace ControllerSimulation
+{
     public class Plongeur {
 
         public Plongeur() {
         }
 
 
-        public void demarrerLaveVaisselle() {
+        public void demarrerLaveVaisselle(View.Element.Element LaveVaisselle) { 
             // TODO implement here
         }
 

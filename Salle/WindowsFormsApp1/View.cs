@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 
 namespace View{
-    public class View : Observable {
+    public class View : IObservable {
 
         public View() {
 

@@ -8,7 +8,7 @@ namespace XUnitTestControllerSimu
         [Fact]
         public void PlongeurTest()
         {
-
+            Assert.True(demarrerLaveVaisselle(DuplicateWaitObjectException)
 
         }
     }
