@@ -11,11 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControllerSupervision", "ControllerSupervision\ControllerSupervision.csproj", "{5CFFCCA4-C7E8-47F7-A7DA-0307D1670626}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "View", "View\View.csproj", "{7330354B-20CB-42C2-8CEA-48136F319B4F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewWin", "ViewWin\ViewWin.csproj", "{3AAC99BF-7064-4F93-8945-D579069F74D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{EC8AFC77-C135-45FA-A7AB-F2B94AC72930}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{EC8AFC77-C135-45FA-A7AB-F2B94AC72930}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +37,6 @@ Global
 		{5CFFCCA4-C7E8-47F7-A7DA-0307D1670626}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CFFCCA4-C7E8-47F7-A7DA-0307D1670626}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CFFCCA4-C7E8-47F7-A7DA-0307D1670626}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7330354B-20CB-42C2-8CEA-48136F319B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7330354B-20CB-42C2-8CEA-48136F319B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7330354B-20CB-42C2-8CEA-48136F319B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7330354B-20CB-42C2-8CEA-48136F319B4F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3AAC99BF-7064-4F93-8945-D579069F74D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3AAC99BF-7064-4F93-8945-D579069F74D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AAC99BF-7064-4F93-8945-D579069F74D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
