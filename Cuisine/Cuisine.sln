@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "View", "View\View.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "WindowsFormsApp1\WindowsFormsApp.csproj", "{0169459E-74B1-4524-9A39-B46FA3037887}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProjectCuisine", "XUnitTestProject2\XUnitTestProjectCuisine.csproj", "{D6B94FBC-AB91-46EB-B104-5AB444F92903}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestControllerSimu", "UnitTestProject1\UnitTestControllerSimu.csproj", "{06BB3F78-3420-4133-BA11-D5893A279E8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{0169459E-74B1-4524-9A39-B46FA3037887}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0169459E-74B1-4524-9A39-B46FA3037887}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0169459E-74B1-4524-9A39-B46FA3037887}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D6B94FBC-AB91-46EB-B104-5AB444F92903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6B94FBC-AB91-46EB-B104-5AB444F92903}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6B94FBC-AB91-46EB-B104-5AB444F92903}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6B94FBC-AB91-46EB-B104-5AB444F92903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06BB3F78-3420-4133-BA11-D5893A279E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06BB3F78-3420-4133-BA11-D5893A279E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06BB3F78-3420-4133-BA11-D5893A279E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06BB3F78-3420-4133-BA11-D5893A279E8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
