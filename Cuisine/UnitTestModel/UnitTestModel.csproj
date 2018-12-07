@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{78F745CB-AD25-4D59-908C-50F778B9EBB8}</ProjectGuid>
+    <ProjectGuid>{24F4B99A-5779-4C87-A9D7-634598735E6B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UnitTestModel</RootNamespace>
@@ -49,9 +49,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestADO.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestElement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
