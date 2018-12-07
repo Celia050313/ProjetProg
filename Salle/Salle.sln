@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "View", "View\View.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewWin", "WindowsFormsApp1\ViewWin.csproj", "{8A0B00CF-097F-411A-8232-F7DEEEDA54FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{83C219EE-F25F-4B45-B744-5FF793E3B242}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestControllerSimu", "UnitTestProject1\TestControllerSimu.csproj", "{83C219EE-F25F-4B45-B744-5FF793E3B242}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
