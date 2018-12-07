@@ -49,11 +49,34 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestElement.cs" />
+    <Compile Include="ADO\TestGestionStock.cs" />
+    <Compile Include="ADO\TestRecette.cs" />
+    <Compile Include="ADO\TestSQLConnection.cs" />
+    <Compile Include="Element\MotionLess\TestChefDeCuisine.cs" />
+    <Compile Include="Element\MotionLess\TestComptoirCommande.cs" />
+    <Compile Include="Element\MotionLess\TestComptoirRetour.cs" />
+    <Compile Include="Element\MotionLess\TestEvier.cs" />
+    <Compile Include="Element\MotionLess\TestFeuxDeCuisson.cs" />
+    <Compile Include="Element\MotionLess\TestFour.cs" />
+    <Compile Include="Element\MotionLess\TestFrigo.cs" />
+    <Compile Include="Element\MotionLess\TestLaveVaisselle.cs" />
+    <Compile Include="Element\MotionLess\TestMachine.cs" />
+    <Compile Include="Element\MotionLess\TestMachineALaver.cs" />
+    <Compile Include="Element\MotionLess\TestMotionLessElements.cs" />
+    <Compile Include="Element\MotionLess\TestMotionLessFactory.cs" />
+    <Compile Include="Element\MotionLess\TestPlonge.cs" />
+    <Compile Include="Element\MotionLess\TestStock.cs" />
+    <Compile Include="Element\TestElement.cs" />
+    <Compile Include="Element\TestImg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestMap.cs" />
+    <Compile Include="TestModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Element\Motion\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

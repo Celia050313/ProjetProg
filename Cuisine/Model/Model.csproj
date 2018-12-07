@@ -9,6 +9,5 @@
     <Folder Include="Element\" />
     <Folder Include="Element\MotionLess\" />
     <Folder Include="Element\Motion\" />
-    <Folder Include="ADO\" />
   </ItemGroup>
 </Project>
