@@ -7,12 +7,19 @@ using System.Text;
 namespace ControllerSimulation{
     public class FacadeCuisinier {
 
+
+        private Plongeur plongeur;
+        private Cuisinier cuisinier;
+        private Commis commis;
+        private chefDeCuisine chefCuisine;
+
         public FacadeCuisinier() {
+
+            plongeur = new Plongeur();
+            cuisinier = new Cuisinier();
+            commis = new Commis();
+            chefCuisine = new chefDeCuisine();
         }
-
-
-
-
 
 
 
@@ -33,10 +40,14 @@ namespace ControllerSimulation{
         }
 
         public void Scenarii() {
+
+
             // TODO implement here
         }
 
         public void Plongeur() {
+
+
             // TODO implement here
         }
 

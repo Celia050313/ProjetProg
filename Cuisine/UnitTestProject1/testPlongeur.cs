@@ -7,8 +7,9 @@ namespace UnitTestControllerSimu
     public class testPlongeur
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestDemarrerLaveVaisselle()
         {
+            Assert.Pass();
         }
     }
 }

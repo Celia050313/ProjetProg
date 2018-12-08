@@ -13,6 +13,7 @@ namespace ControllerSimulation{
 
         public void apporterIngredient() {
             // TODO implement here
+
         }
 
         public void deplacerPlat() {

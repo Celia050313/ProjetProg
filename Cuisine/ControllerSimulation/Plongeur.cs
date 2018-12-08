@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace ControllerSimulation{
     public class Plongeur {
@@ -11,15 +12,26 @@ namespace ControllerSimulation{
         }
 
 
+
+
         public void demarrerLaveVaisselle() {
-            // TODO implement here
-        }
 
-        public void demarrerLaveLinge() {
-            // TODO implement here
-        }
+            bool complete = false;
+            var t = new Thread(() =>
+            {
+                bool toggle = false;
+                while (!complete) toggle = !toggle;
+            });
+            t.Start();
+            Thread.Sleep(1000);
+            complete = true;
+            t.Join();
 
-        public void debarrasserLaveLinge() {
+            
+         } 
+
+
+    public void DebarrasserLaveLinge() {
             // TODO implement here
         }
 

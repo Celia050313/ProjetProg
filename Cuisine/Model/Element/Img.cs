@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace View.Element{
+namespace Model.Element{
     public class Img {
 
         public Img() {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace View.Element.Motion{
+namespace Model.Element.Motion{
     public class Class2 {
 
         public Class2() {

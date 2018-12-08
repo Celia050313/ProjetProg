@@ -1,8 +1,10 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace ControllerSimulation{
     public class ThreadComm : Idisposable {
@@ -10,14 +12,16 @@ namespace ControllerSimulation{
         public ThreadComm() {
         }
 
-        private Bool disposed;
+        private bool disposed;
 
         public Component component;
 
 
-
+        public static bool QueueUserWorkItem(WaitCallback callBack, object state)
 
         public void threadStart() {
+       
+            ThreadPool.QueueUserWorkItem();
             // TODO implement here
         }
 
