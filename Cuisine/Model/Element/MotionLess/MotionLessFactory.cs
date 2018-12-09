@@ -19,6 +19,26 @@ namespace Model.Element.Motionless{
             // TODO implement here
             return null;
         }
+        public Element FactoryMethod(string motionless)
+        {
+            switch (motionless)
+            {
+                case "lavevaisselle":
+                    return new LaveVaisselle();
+                case "machinelaver":
+                    return new MachineALaver();
+                case "frigo":
+                    return new Frigo();
+                case "four":
+                    return new Four();
+                case "evier":
+                    return new Evier();
+                case "comptoircmd":
+                    return new ComptoirCommande();
+                default:
+                    throw new System.Exception("Type de MachineCuisine non reconnu.");
+            }
+        }
 
         public void createChefDeCuisine() {
             // TODO implement here
