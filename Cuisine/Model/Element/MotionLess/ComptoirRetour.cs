@@ -7,14 +7,16 @@ using System.Text;
 namespace Model.Element.Motionless{
     public class ComptoirRetour : MotionLessElements {
 
+        public int NbCouverts = 0;
+
+        public int NbAssiettes = 0;
+
+        public int NbVerres = 0;
+
+
         public ComptoirRetour() {
         }
 
-        public int NbCouverts;
-
-        public int NbAssiettes;
-
-        public int NbVerres;
 
         public void getCommandeSalle() {
             // TODO implement here

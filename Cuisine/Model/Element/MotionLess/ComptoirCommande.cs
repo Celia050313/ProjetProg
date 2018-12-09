@@ -10,9 +10,9 @@ namespace Model.Element.Motionless{
         public ComptoirCommande() {
         }
 
-        public int NbPlats;
+        public int NbPlats=0;
 
-        public int NbMax;
+        public int NbMax=15;
 
         public void ComptoirCommande() {
             // TODO implement here

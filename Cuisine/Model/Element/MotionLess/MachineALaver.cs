@@ -13,9 +13,16 @@ namespace Model.Element.Motionless{
         public int Contenance;
 
         public void Time;
+        
+        public override Machine clone()
+        {
+            return (Machine)this.MemberwiseClone();
+        }
 
-        public void clone() {
-            // TODO implement here
+        public override string getImg()
+        {
+            throw new NotImplementedException();
+            //return adresse img;
         }
 
     }

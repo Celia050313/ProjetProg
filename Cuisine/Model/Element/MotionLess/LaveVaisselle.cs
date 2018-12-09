@@ -7,20 +7,30 @@ using System.Text;
 namespace Model.Element.Motionless{
     public class LaveVaisselle : Machine {
 
-        public LaveVaisselle() {
-        }
 
-        public int ContenanceVerre;
+        public int ContenanceVerre = 0;
 
-        public int ContenanceCouvert;
+        public int ContenanceCouvert = 0;
 
-        public int ContenanceAssiette;
+        public int ContenanceAssiette = 0;
 
         public void Time;
 
 
-        public void clone() {
-            // TODO implement here
+        public LaveVaisselle() {
+        }
+
+
+
+        public override Machine clone()
+        {
+            return (Machine)this.MemberwiseClone();
+        }
+        
+        public override string getImg()
+        {
+            throw new NotImplementedException();
+            //return adresse img;
         }
 
     }

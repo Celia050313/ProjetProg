@@ -10,15 +10,14 @@ namespace Model.Element.Motionless{
         public Machine() {
         }
 
-        public void etat() {
-            // TODO implement here
-        }
-
-        public void getImg() {
-            // TODO implement here
-        }
-
         public abstract Machine clone();
+
+        //    public abstract etat() {
+        //      // TODO implement here
+        //}
+
+        public abstract string getImg();
+
 
     }
 }

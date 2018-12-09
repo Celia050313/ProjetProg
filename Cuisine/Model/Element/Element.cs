@@ -10,9 +10,6 @@ namespace Model.Element{
         public Element() {
         }
 
-
-
-
         public void Elements() {
             // TODO implement here
         }

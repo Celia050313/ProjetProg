@@ -3,13 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Model.Element;
 
 namespace Model{
     public interface IMap {
 
-        public void setMobileHasChanged();
+        void setMobileHasChanged();
 
-        public void getOnTheMapXY();
+        Element getOnTheMapXY();
 
     }
 }

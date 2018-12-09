@@ -7,15 +7,12 @@ using System.Text;
 namespace Model{
     public class Map : IMap {
 
+        int height;
+        int width;
+
         public Map() {
         }
 
-
-
-
-        public void Map() {
-            // TODO implement here
-        }
 
         /// <summary>
         /// @return
@@ -25,36 +22,23 @@ namespace Model{
             return null;
         }
 
-        /// <summary>
-        /// @return
-        /// </summary>
+
         public int getWidth() {
-            // TODO implement here
-            return 0;
+            return width;
         }
 
-        /// <summary>
-        /// @return
-        /// </summary>
-        public void setWidth() {
-            // TODO implement here
-            return null;
+
+        public void setWidth(int width) {
+            this.width=width;
         }
 
-        /// <summary>
-        /// @return
-        /// </summary>
+
         public int getHeight() {
-            // TODO implement here
-            return 0;
+            return height;
         }
 
-        /// <summary>
-        /// @return
-        /// </summary>
-        public void setHeight() {
-            // TODO implement here
-            return null;
+        public void setHeight(int height) {
+            this.height=height;
         }
 
         /// <summary>
@@ -74,7 +58,8 @@ namespace Model{
         }
 
         public void setMobileHasChanged() {
-            // TODO implement here
+            this.setChanged();
+            this.notifyObservers();
         }
 
         /// <summary>
