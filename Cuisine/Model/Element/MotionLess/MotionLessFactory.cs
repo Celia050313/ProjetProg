@@ -35,6 +35,10 @@ namespace Model.Element.Motionless{
                     return new Evier();
                 case "comptoircmd":
                     return new ComptoirCommande();
+                case "comptoiretour":
+                    return new ComptoirRetour();
+                case "plonge":
+                    return new Plonge();
                 default:
                     throw new System.Exception("Type de MachineCuisine non reconnu.");
             }
