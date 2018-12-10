@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
-using System.Data.SqlClient;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
 
 namespace Model.ADO
 {
     class Connexion
     {
-
-
 
         public Connexion()
         {
@@ -18,8 +18,8 @@ namespace Model.ADO
 
         public void Connect()
         {
-
-            SqlConnection connexion = new SqlConnection("Data Source = DESKTOP - URQ2J9H; Initial Catalog = Master_Chef; Integrated Security = True");
+            MySqlConnection
+           SqlConnection connec = new SqlConnection("Data Source = DESKTOP - URQ2J9H; Initial Catalog = Master_Chef; Integrated Security = True");
         }
     }
 

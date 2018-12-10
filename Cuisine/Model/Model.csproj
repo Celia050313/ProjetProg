@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Element\MotionLess\" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\Downloads\MySql.Data.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

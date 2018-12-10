@@ -12,15 +12,6 @@ namespace Model{
 
 
 
-
-
-
-
-
-        public void Model() {
-            // TODO implement here
-        }
-
         /// <summary>
         /// @return
         /// </summary>
@@ -29,13 +20,6 @@ namespace Model{
             return null;
         }
 
-        /// <summary>
-        /// @return
-        /// </summary>
-        public Map getMap() {
-            // TODO implement here
-            return null;
-        }
 
         /// <summary>
         /// @return
