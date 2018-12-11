@@ -14,7 +14,7 @@ namespace View.Element.Motionless{
 
         public int NbMax;
 
-        public void ComptoirCommande() {
+        public void ComptoirCommande2() {
             // TODO implement here
         }
 
@@ -22,13 +22,13 @@ namespace View.Element.Motionless{
             // TODO implement here
         }
 
-        public void getImg() {
+        //public void getImg() {
             // TODO implement here
-        }
+        //}
 
-        public void etat() {
+        //public void etat() {
             // TODO implement here
-        }
+        //}
 
     }
 }

@@ -10,9 +10,9 @@ namespace ControllerSimulation{
         public ThreadComm() {
         }
 
-        private Bool disposed;
+        //private bool disposed;
 
-        public Component component;
+        public System.ComponentModel.Component component;
 
 
 
@@ -44,10 +44,10 @@ namespace ControllerSimulation{
         /// <summary>
         /// @return
         /// </summary>
-        public Singleton getInstance() {
+      //  public Singleton getInstance() {
             // TODO implement here
-            return null;
-        }
+          //  return null;
+       // }
 
     }
 }

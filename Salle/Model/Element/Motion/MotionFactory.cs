@@ -21,7 +21,7 @@ namespace View.Element.Motion{
         /// </summary>
         public void setHasMoved() {
             // TODO implement here
-            return null;
+            //return null;
         }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace View.Element.Motion{
         /// </summary>
         public void setX() {
             // TODO implement here
-            return null;
+            //return null;
         }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace View.Element.Motion{
         /// </summary>
         public void setY() {
             // TODO implement here
-            return null;
+            //return null;
         }
 
         /// <summary>
@@ -59,10 +59,10 @@ namespace View.Element.Motion{
         /// <summary>
         /// @return
         /// </summary>
-        public MotionLessElements createCommande() {
+      //  public MotionLessElements createCommande() {
             // TODO implement here
-            return null;
-        }
+         //   return null;
+       // }
 
         public void createServiette() {
             // TODO implement here
@@ -115,10 +115,10 @@ namespace View.Element.Motion{
         /// <summary>
         /// @return
         /// </summary>
-        public Singleton getInstance() {
+      //  public Singleton getInstance() {
             // TODO implement here
-            return null;
-        }
+      //      return null;
+      //  }
 
     }
 }

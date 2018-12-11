@@ -10,7 +10,7 @@ namespace View.Element.Motion{
         public Serveur() {
         }
 
-        public void Serveur() {
+        public void Serveur2() {
             // TODO implement here
         }
 

@@ -10,20 +10,12 @@ namespace View.Element.Motion{
         public Carte() {
         }
 
-        public void Carte() {
-            // TODO implement here
-        }
-
         public void setCarte() {
             // TODO implement here
         }
 
-        public void getImg() {
-            // TODO implement here
-        }
-
-        public void etat() {
-            // TODO implement here
+        public string etat() {
+            return "Distribué";
         }
 
     }

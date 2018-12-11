@@ -5,15 +5,9 @@ using System.Linq;
 using System.Text;
 
 namespace View.Element.Motion{
-    public class MotionElement {
+    public class MotionElement : IElement{
 
         public MotionElement() {
-        }
-
-
-
-        public void MotionElement() {
-            // TODO implement here
         }
 
     }

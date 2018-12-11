@@ -12,16 +12,16 @@ namespace View.Element.Motion{
 
         public bool CouvertSale;
 
-        public void Couverts() {
+     //   public void Couverts() {
             // TODO implement here
-        }
+      //  }
 
         /// <summary>
         /// @return
         /// </summary>
         public void getImg() {
             // TODO implement here
-            return null;
+            //return null;
         }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace View.Element.Motion{
         /// </summary>
         public void etat() {
             // TODO implement here
-            return null;
+            //return null;
         }
 
     }

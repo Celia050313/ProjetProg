@@ -16,21 +16,21 @@ namespace View.Element.Motionless{
 
         public int NbVerres;
 
-        public void ComptoirRetour() {
+        public void ComptoirRetour2() {
             // TODO implement here
         }
 
-        public void getCommande() {
+        public void GetCommande() {
             // TODO implement here
         }
 
-        public void getImg() {
+        //public void getImg() {
             // TODO implement here
-        }
+        //}
 
-        public void etat() {
+        //public void etat() {
             // TODO implement here
-        }
+       // }
 
     }
 }

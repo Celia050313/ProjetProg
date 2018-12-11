@@ -51,10 +51,10 @@ namespace View.Element.Motionless{
         /// <summary>
         /// @return
         /// </summary>
-        public Singleton getInstance() {
+       // public Singleton getInstance() {
             // TODO implement here
-            return null;
-        }
-
+      //      return null;
+       // }
+    //
     }
 }

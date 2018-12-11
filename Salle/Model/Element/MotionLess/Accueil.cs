@@ -14,21 +14,21 @@ namespace View.Element.Motionless{
 
         public int NbPersAttente;
 
-        public void Accueil() {
+        //public void Accueil2() {
             // TODO implement here
-        }
+       // }
 
-        public void getCarte() {
+       // public void getCarte() {
             // TODO implement here
-        }
+       // }
 
-        public void getImg() {
+       // public void getImg() {
             // TODO implement here
-        }
+        //}
 
-        public void etat() {
+       // public void etat() {
             // TODO implement here
-        }
+       // }
 
     }
 }

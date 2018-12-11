@@ -4,17 +4,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace View.Element.Motion{
-    public class JeuTasse : MotionElement {
+namespace View.Element.Motion
+{
+    public class JeuTasse : MotionElement
+    {
 
-        public JeuTasse() {
+        public JeuTasse()
+        {
         }
 
-        public void JeuSale;
+        //   public void JeuSale;
 
-        public void getImg() {
+        public void getImg()
+        {
             // TODO implement here
-        }
+            //   }
 
+        }
     }
 }

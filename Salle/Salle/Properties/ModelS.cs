@@ -3,12 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+//using Model;
 
-
-namespace Model{
-    public class Model : IModel {
-
-        public Model() {
+namespace ModelS{
+    public class ModelS{
+        //  : IModel 
+        public ModelS() {
         }
 
 
@@ -17,7 +17,7 @@ namespace Model{
 
 
 
-        public void Model2() {
+        public void ModelS2() {
             // TODO implement here
         }
 
@@ -32,7 +32,7 @@ namespace Model{
         /// <summary>
         /// @return
         /// </summary>
-        public Map getMap() {
+        public object getMap() {
             // TODO implement here
             return null;
         }

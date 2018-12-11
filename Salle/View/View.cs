@@ -5,17 +5,17 @@ using System.Linq;
 using System.Text;
 
 namespace View{
-    public class View : Observable {
+    public class View {
 
         public View() {
         }
 
+        //IObservable
 
 
 
 
-
-        public void View() {
+        public void View2() {
             // TODO implement here
         }
 

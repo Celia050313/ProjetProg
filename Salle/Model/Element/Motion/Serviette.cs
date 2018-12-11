@@ -12,9 +12,9 @@ namespace View.Element.Motion{
 
         public bool ServietteSale;
 
-        public void Serviette() {
+      //  public void Serviette() {
             // TODO implement here
-        }
+      //  }
 
         public void getIMG() {
             // TODO implement here

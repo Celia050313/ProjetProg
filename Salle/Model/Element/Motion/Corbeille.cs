@@ -10,9 +10,9 @@ namespace View.Element.Motion{
         public Corbeille() {
         }
 
-        public void Corbeille() {
+       // public void Corbeille() {
             // TODO implement here
-        }
+       // }
 
         public void getImg() {
             // TODO implement here

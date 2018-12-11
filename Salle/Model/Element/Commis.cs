@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 
 namespace View.Element.Motion{
-    public class Commande : MotionElement {
+    public class Commis : MotionElement {
 
-        public Commande() {
+        public Commis() {
         }
 
-        public void etat() {
-            // TODO implement here
+        public string etat() {
+            return "En activité";
         }
 
     }

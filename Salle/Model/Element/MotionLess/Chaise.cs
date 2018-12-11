@@ -10,17 +10,17 @@ namespace View.Element.Motionless{
         public Chaise() {
         }
 
-        public void Chaise() {
+       // public void Chaise2() {
             // TODO implement here
-        }
+       // }
 
-        public void getImg() {
-            // TODO implement here
-        }
+       // public void getImg() {
+      //     // TODO implement here
+       // }
 
-        public void etat() {
+       // public void etat() {
             // TODO implement here
-        }
+        //}
 
     }
 }

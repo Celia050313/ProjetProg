@@ -12,7 +12,7 @@ namespace View.Element.Motion{
 
         public bool VerreSale;
 
-        public void Verre() {
+        public void Verre2() {
             // TODO implement here
         }
 

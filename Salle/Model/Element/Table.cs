@@ -14,17 +14,17 @@ namespace View.Element.Motionless{
 
         public bool Utilisé;
 
-        public void Table() {
+       // public void Table() {
             // TODO implement here
-        }
+       // }
 
-        public void getImg() {
+        //public void getImg() {
             // TODO implement here
-        }
+        //}
 
-        public void etat() {
+        //public void etat() {
             // TODO implement here
-        }
+       // }
 
     }
 }

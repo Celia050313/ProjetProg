@@ -16,7 +16,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void demanderPain() {
             // TODO implement here
-            return null;
+           // return null;
         }
 
         public void demanderEau() {
@@ -28,7 +28,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void demanderVin() {
             // TODO implement here
-            return null;
+           // return null;
         }
 
         public void commander() {

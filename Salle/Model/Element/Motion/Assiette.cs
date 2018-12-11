@@ -12,16 +12,8 @@ namespace View.Element.Motion{
 
         public bool AssietteSale;
 
-        public void Assiette() {
-            // TODO implement here
-        }
-
-        public void getImg() {
-            // TODO implement here
-        }
-
-        public void etat() {
-            // TODO implement here
+        public string etat() {
+            return "Utilisé";
         }
 
     }

@@ -12,9 +12,9 @@ namespace View.Element.Motion{
 
         public bool NappeSale;
 
-        public void Nappe() {
+      //  public void Nappe() {
             // TODO implement here
-        }
+      //  }
 
         public void getImg() {
             // TODO implement here

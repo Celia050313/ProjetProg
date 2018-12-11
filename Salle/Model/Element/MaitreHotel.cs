@@ -10,7 +10,7 @@ namespace View.Element.Motionless{
         public MaitreHotel() {
         }
 
-        public void MaitreHotel() {
+        public void MaitreHotel2() {
             // TODO implement here
         }
 
@@ -19,23 +19,23 @@ namespace View.Element.Motionless{
         /// </summary>
         public void DemandeNbPers() {
             // TODO implement here
-            return null;
+            //return null;
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void getImg() {
+       // public void getImg() {
             // TODO implement here
-            return null;
-        }
+          //  return null;
+        //}
 
         /// <summary>
         /// @return
         /// </summary>
         public void etat() {
             // TODO implement here
-            return null;
+            //return null;
         }
 
     }

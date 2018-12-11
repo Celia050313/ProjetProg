@@ -18,25 +18,25 @@ namespace ControllerSimulation{
         /// <summary>
         /// @return
         /// </summary>
-        public View getView() {
+      //  public View getView() {
             // TODO implement here
-            return null;
-        }
+            //return null;
+       // }
 
         /// <summary>
         /// @return
         /// </summary>
-        public Model getModel() {
+       // public Model getModel() {
             // TODO implement here
-            return null;
-        }
+       //     return null;
+      //  }
 
         /// <summary>
         /// @return
         /// </summary>
         public void setView() {
             // TODO implement here
-            return null;
+       //     return null;
         }
 
         /// <summary>
@@ -44,7 +44,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void setModel() {
             // TODO implement here
-            return null;
+          //  return null;
         }
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void Deplacement() {
             // TODO implement here
-            return null;
+           // return null;
         }
 
         /// <summary>
@@ -60,7 +60,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void Horloge() {
             // TODO implement here
-            return null;
+           // return null;
         }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void changerSalle() {
             // TODO implement here
-            return null;
+          //  return null;
         }
 
         /// <summary>
@@ -76,7 +76,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void compter() {
             // TODO implement here
-            return null;
+          //  return null;
         }
 
         /// <summary>
@@ -84,7 +84,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void PriseCommande() {
             // TODO implement here
-            return null;
+           // return null;
         }
 
         /// <summary>
@@ -92,7 +92,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void transmettreCommande() {
             // TODO implement here
-            return null;
+           // return null;
         }
 
         /// <summary>
@@ -100,12 +100,12 @@ namespace ControllerSimulation{
         /// </summary>
         public void run() {
             // TODO implement here
-            return null;
+           // return null;
         }
 
-        public void ControllerSimulation() {
+    //    public void ControllerSimulation() {
             // TODO implement here
-        }
+     //   }
 
         public void pause() {
             // TODO implement here

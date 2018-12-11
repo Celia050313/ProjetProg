@@ -12,16 +12,8 @@ namespace View.Element.Motion{
 
         public String Contenu;
 
-        public void Bouteille() {
-            // TODO implement here
-        }
-
-        public void getImg() {
-            // TODO implement here
-        }
-
-        public void etat() {
-            // TODO implement here
+        public string etat() {
+            return "Utilisé";
         }
 
     }

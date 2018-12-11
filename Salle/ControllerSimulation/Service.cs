@@ -16,7 +16,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void sertPain() {
             // TODO implement here
-            return null;
+           // return null;
         }
 
         /// <summary>
@@ -24,7 +24,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void sertEau() {
             // TODO implement here
-            return null;
+           // return null;
         }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void sertPlat() {
             // TODO implement here
-            return null;
+            //return null;
         }
 
         /// <summary>
@@ -40,7 +40,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void sertEntree() {
             // TODO implement here
-            return null;
+        
         }
 
         /// <summary>
@@ -48,7 +48,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void sertDessert() {
             // TODO implement here
-            return null;
+         
         }
 
         public void questionne() {
