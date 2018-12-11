@@ -12,13 +12,10 @@ namespace View{
             //jj
         }
 
-
-
-
-
-
         public void View() {
             // TODO implement here
+       
+       
         }
 
         public void update() {
