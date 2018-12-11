@@ -7,7 +7,7 @@ using System.Text;
 namespace Model.Element{
     public class Factory {
 
-        Singleton instance = new Singleton
+        Singleton instance;
 
         public Factory() {
         }

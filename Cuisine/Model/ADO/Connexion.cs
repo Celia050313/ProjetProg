@@ -10,6 +10,7 @@ namespace Model.ADO
 {
     class Connexion
     {
+        Singleton Instance;
 
         public Connexion()
         {
@@ -18,8 +19,13 @@ namespace Model.ADO
 
         public void Connect()
         {
-            MySqlConnection
-           SqlConnection connec = new SqlConnection("Data Source = DESKTOP - URQ2J9H; Initial Catalog = Master_Chef; Integrated Security = True");
+            MySqlConnection;
+           
+        }
+
+        public Singleton getInstance()
+        {
+
         }
     }
 

@@ -5,21 +5,9 @@ using System.Linq;
 using System.Text;
 
 namespace Model.Element{
-    public class Element {
+    public class Element : IElement {
 
         public Element() {
-        }
-
-        public void Elements() {
-            // TODO implement here
-        }
-
-        public void getImg() {
-            // TODO implement here
-        }
-
-        public void setImg() {
-            // TODO implement here
         }
 
     }
