@@ -27,7 +27,7 @@ namespace ControllerSimulation{
         public void groupe() {
             Random alea = new Random();
             int aleaFin = alea.Next(0, 19);
-            int nbClient;
+            int nbClient = 0;
             bool arrivee = false;
             int pourcentage = alea.Next(19);
 
@@ -38,32 +38,29 @@ namespace ControllerSimulation{
                     nbClient = 2;
                 }
 
-                if (aleaFin > 4 && aleaFin <= 10)
+                else if (4 < aleaFin && aleaFin <= 10)
                 {
                     nbClient = 4;
                 }
 
-                if (10 > aleaFin && aleaFin <= 13)
+                else if (10 < aleaFin && aleaFin <= 13)
                 {
                     nbClient = 3;
                 }
 
-                if (13 < aleaFin && aleaFin <= 16)
+                else if (13 < aleaFin && aleaFin <= 16)
                 {
                     nbClient = 6;
                 }
 
-                if (16 < aleaFin && aleaFin <= 18)
-                {
-                    nbClient = 10;
-                }
-            
+                else nbClient = 10;
+
+
             }
-            else
-            {
-                nbClient = 0;
-            }
+            else nbClient = 0;
+            Console.WriteLine(value: nbClient);
         }
+    }
 
         public void ordre() {
             // TODO implement here
@@ -74,12 +71,15 @@ namespace ControllerSimulation{
         }
 
         public void reserver() {
+            bool reservation;
             Random alea = new Random();
             int aleaRnd = alea.Next(0,5);
-            if (aleaRnd < 3)
+            if (aleaRnd <= 3)
             {
-
+                reservation = false;
             }
+            else reservation = true;
+            Console.WriteLine(reservation);
         }
 
     }
