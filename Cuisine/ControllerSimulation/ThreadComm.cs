@@ -3,9 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Net;
+using System.Net.Sockets;
 
 namespace ControllerSimulation{
-    public class ThreadComm : Idisposable {
+   /* public class ThreadComm : IDisposable {
 
         public ThreadComm() {
         }
@@ -45,5 +47,5 @@ namespace ControllerSimulation{
             return null;
         }
 
-    }
+    }*/
 }

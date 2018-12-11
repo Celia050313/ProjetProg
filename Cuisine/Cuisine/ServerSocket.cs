@@ -4,12 +4,13 @@ using System.Text;
 using System.Net;
 using System.Net.Sockets;
 
-namespace ControllerSimulation
+namespace Cuisine
 {
-    class SocketServer
+    class ServerSocket
     {
         // Incoming data from the client.  
         public static string data = null;
+
 
         public static void StartListening()
         {

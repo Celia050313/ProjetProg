@@ -4,14 +4,14 @@ using System.Text;
 using System.Net;
 using System.Net.Sockets;
 
-namespace ControllerSimulation
+namespace ControllerSim
 {
     class SocketServer
     {
         // Incoming data from the client.  
         public static string data = null;
 
-        public static void StartListening()
+        public  void StartListening()
         {
             // Data buffer for incoming data.  
             byte[] bytes = new Byte[1024];

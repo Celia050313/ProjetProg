@@ -11,10 +11,6 @@ namespace ControllerSimulation{
         }
 
 
-        public void Cuisinier() {
-            // TODO implement here
-        }
-
         public void wait() {
             // TODO implement here
         }
