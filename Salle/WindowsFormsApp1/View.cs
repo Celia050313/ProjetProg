@@ -17,7 +17,7 @@ namespace View{
 
 
 
-        public void View() {
+        public void view() {
             // TODO implement here
         }
 

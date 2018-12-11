@@ -1,50 +1,61 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UnitTestProject1
+
+namespace TestControllerSimu
 {
-    [TestClass]
-    public class Accueil
+    [TestClass()]
+    public class AccueilTest
     {
-        [TestMethod]
-        public Accueil()
+        TestControllerSimu.Accueil acc = new TestControllerSimu.Accueil();
+
+        [TestMethod()]
+        public void accueil()
         {
+            Assert.Fail();
         }
 
-        public void paie()
+        [TestMethod()]
+        public void paieTest()
         {
-
+            
+            Assert.AreEqual(23);
         }
 
+        [TestMethod()]
         public void ordonner()
         {
-
+            Assert.Fail();
         }
 
+        [TestMethod()]
         public void assigneTable()
         {
-
+           Assert.Fail();
         }
 
+        [TestMethod()]
         public void groupe()
         {
-
+            Assert.Fail();
         }
 
-        
+        [TestMethod()]
         public void ordre()
         {
-
+            Assert.Fail();
         }
 
+        [TestMethod()]
         public void wait()
         {
-
+            Assert.Fail();
         }
 
+        [TestMethod()]
         public void reserver()
         {
-
+            Assert.Fail();
         }
     }
 }

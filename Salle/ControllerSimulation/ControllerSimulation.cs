@@ -10,10 +10,7 @@ namespace ControllerSimulation{
         public ControllerSimulation() {
         }
 
-
-
-
-
+        
 
         /// <summary>
         /// @return
@@ -36,7 +33,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void setView() {
             // TODO implement here
-            return null;
+            //return null;
         }
 
         /// <summary>
@@ -44,23 +41,15 @@ namespace ControllerSimulation{
         /// </summary>
         public void setModel() {
             // TODO implement here
-            return null;
+            //return null;
         }
 
         /// <summary>
         /// @return
         /// </summary>
-        public void Deplacement() {
+        public void horloge() {
             // TODO implement here
-            return null;
-        }
-
-        /// <summary>
-        /// @return
-        /// </summary>
-        public void Horloge() {
-            // TODO implement here
-            return null;
+          //  return null;
         }
 
         /// <summary>
@@ -68,7 +57,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void changerSalle() {
             // TODO implement here
-            return null;
+          //  return null;
         }
 
         /// <summary>
@@ -76,23 +65,7 @@ namespace ControllerSimulation{
         /// </summary>
         public void compter() {
             // TODO implement here
-            return null;
-        }
-
-        /// <summary>
-        /// @return
-        /// </summary>
-        public void PriseCommande() {
-            // TODO implement here
-            return null;
-        }
-
-        /// <summary>
-        /// @return
-        /// </summary>
-        public void transmettreCommande() {
-            // TODO implement here
-            return null;
+          //  return null;
         }
 
         /// <summary>
@@ -100,10 +73,10 @@ namespace ControllerSimulation{
         /// </summary>
         public void run() {
             // TODO implement here
-            return null;
+           // return null;
         }
 
-        public void ControllerSimulation() {
+        public void controllerSimulation() {
             // TODO implement here
         }
 
