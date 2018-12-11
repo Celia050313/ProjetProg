@@ -11,26 +11,6 @@ namespace ControllerSimulation{
         }
 
 
-        /// <summary>
-        /// @return
-        /// </summary>
-        public void demanderPain() {
-            // TODO implement here
-           // return null;
-        }
-
-        public void demanderEau() {
-            // TODO implement here
-        }
-
-        /// <summary>
-        /// @return
-        /// </summary>
-        public void demanderVin() {
-            // TODO implement here
-           // return null;
-        }
-
         public void commander() {
             // TODO implement here
         }

@@ -4,18 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
 namespace ControllerSimulation{
     public class ThreadComm : Idisposable {
 
         public ThreadComm() {
         }
 
-        //private bool disposed;
+        private bool disposed;
+
+
 
         public System.ComponentModel.Component component;
-
-
-
 
         public void threadStart() {
             // TODO implement here
@@ -44,10 +44,10 @@ namespace ControllerSimulation{
         /// <summary>
         /// @return
         /// </summary>
-      //  public Singleton getInstance() {
-            // TODO implement here
-          //  return null;
-       // }
+       public void getInstance() {
+            // Insert singleton here
+           //return null;
+        }
 
     }
 }

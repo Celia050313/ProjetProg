@@ -51,9 +51,6 @@ namespace ControllerSimulation{
          
         }
 
-        public void questionne() {
-            // TODO implement here
-        }
 
         public void debarrasser() {
             // TODO implement here

@@ -1,4 +1,5 @@
 ﻿using System;
+using Model;
 
 namespace Model
 {
@@ -6,7 +7,8 @@ namespace Model
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(Model.getElement("Yolo"));
+
         }
     }
 }

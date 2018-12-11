@@ -5,19 +5,13 @@ using System.Linq;
 using System.Text;
 
 namespace View{
-    public class View {
+    public class View : IObservable {
 
         public View() {
         }
 
-        //IObservable
+        
 
-
-
-
-        public void View2() {
-            // TODO implement here
-        }
 
         public void update() {
             // TODO implement here
@@ -39,5 +33,9 @@ namespace View{
             // TODO implement here
         }
 
+    }
+
+    public interface IObservable
+    {
     }
 }

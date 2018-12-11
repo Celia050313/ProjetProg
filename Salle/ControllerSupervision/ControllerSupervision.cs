@@ -18,10 +18,6 @@ namespace ControllerSupervision{
             // TODO implement here
         }
 
-        public void gestionressources() {
-            // TODO implement here
-        }
-
         public void getModel() {
             // TODO implement here
         }
