@@ -70,7 +70,7 @@ namespace ControllerSimulation{
         }
 
         public void wait() {
-            bool statut = true;
+            bool statut = true; 
         }
 
         public void reserver() {
