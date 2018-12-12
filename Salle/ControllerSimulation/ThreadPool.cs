@@ -22,7 +22,7 @@ namespace ControllerSimulation{
             AllThreads.Clear();
         }
 
-        public void pool()
+        public void Pool()
         {
             //
         }
