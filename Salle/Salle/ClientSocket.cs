@@ -35,10 +35,14 @@ namespace Salle
                         sender.RemoteEndPoint.ToString());
 
                     // Encode the data string into a byte array.  
-                    byte[] msg = Encoding.ASCII.GetBytes("This is a test<EOF>");
+                    //byte[] msg = Encoding.ASCII.GetBytes("This is a test<EOF>");
+
+                    var plat = new Plat { Type = 1 };
+                    byte[] serialized = plat.Serialize();
 
                     // Send the data through the socket.  
-                    int bytesSent = sender.Send(msg);
+                    int bytesSent = sender.Send(serialized);
+                    Console.WriteLine("Test");
 
                     // Receive the response from the remote device.  
                     int bytesRec = sender.Receive(bytes);

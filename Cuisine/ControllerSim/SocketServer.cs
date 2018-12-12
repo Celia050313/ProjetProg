@@ -6,12 +6,12 @@ using System.Net.Sockets;
 
 namespace ControllerSim
 {
-    class SocketServer
+    public class SocketServer
     {
         // Incoming data from the client.  
         public static string data = null;
 
-        public  void StartListening()
+        public void StartListening()
         {
             // Data buffer for incoming data.  
             byte[] bytes = new Byte[1024];

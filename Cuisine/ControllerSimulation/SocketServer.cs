@@ -6,7 +6,7 @@ using System.Net.Sockets;
 
 namespace ControllerSimulation
 {
-    class SocketServer
+    public class SocketServer
     {
         // Incoming data from the client.  
         public static string data = null;

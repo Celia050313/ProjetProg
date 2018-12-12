@@ -6,7 +6,7 @@ using System.Net.Sockets;
 
 namespace ControllerSimulation
 {
-    class SocketClient
+    public class SocketClient
     {
         public static void StartClient()
         {

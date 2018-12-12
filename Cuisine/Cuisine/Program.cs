@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
-using ControllerSim;
 
 namespace Cuisine
 {
@@ -13,7 +12,7 @@ namespace Cuisine
     {
         static int Main(string[] args)
         {
-            SocketServer.StartListening();
+            ServerSocket.StartListening();
             return 0;
             
            // FINALIZE
