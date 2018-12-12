@@ -7,14 +7,19 @@ using System.Text;
 namespace Element{
     public class Serveur {
 
-        public Serveur() {
+        public int ID { get; set; }
+        public string Etat { get; set; }
+        public string Nom { get; set; }
+        public Serveur(int id, string etat, string nom) {
+            this.ID = id;
+            this.Etat = etat;
+            this.Nom = nom;
+
         }
 
 
 
-        public void etat() {
-            // TODO implement here
-        }
+        
 
     }
 }

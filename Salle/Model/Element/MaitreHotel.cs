@@ -7,20 +7,22 @@ using System.Text;
 namespace Element{
     public class MaitreHotel {
 
-        public MaitreHotel() {
+        public string Etat { get; set; }
+        public int ID { get; set; }
+
+        public MaitreHotel(int id, string etat)
+        {
+            this.ID = id;
+            this.Etat = etat;
+
         }
 
 
-        public void DemandeNbPers() {
+        public int DemandeNbPers() {
             // TODO implement here
-            //return null;
+            return 0;
         }
 
-
-        public void etat() {
-            // TODO implement here
-            //return null;
-        }
 
     }
 }

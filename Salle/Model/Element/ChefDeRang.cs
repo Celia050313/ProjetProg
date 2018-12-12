@@ -7,12 +7,17 @@ using System.Text;
 namespace Element{
     public class ChefDeRang {
 
-        public ChefDeRang() {
+
+        public int ID { get; set; }
+        public string Etat { get; set; }
+
+        public ChefDeRang(int id, string etat)
+        {
+            this.ID = id;
+            this.Etat = etat;
+
         }
 
-        public string etat() {
-            return "Actif";
-        }
 
     }
 }

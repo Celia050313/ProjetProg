@@ -7,7 +7,9 @@ namespace Model
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Model.getElement("Yolo"));
+            Factory factory = new Factory(50);
+            if(factory==null)
+            { Console.WriteLine("YouSK2"); };
 
         }
     }

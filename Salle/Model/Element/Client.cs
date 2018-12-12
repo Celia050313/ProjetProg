@@ -7,12 +7,20 @@ using System.Text;
 namespace Element{
     public class Client {
 
-        public Client() {
+
+        public int ID { get; set; }
+        public string Etat { get; set; }
+
+        public Client(int id, string etat)
+        {
+            this.ID = id;
+            this.Etat = etat;
+
         }
 
-       public string Type="";
+        public string Type { get; set; }
 
-       public string typeCommande="";
+        public string typeCommande { get; set; }
 
 
         public void gout() {
@@ -20,9 +28,6 @@ namespace Element{
             /// ou génération fixe en fonction du type de client ainsi que de la catégorie ?
         }
 
-        public string etat() {
-            return "En attente";
-        }
 
         public void categorie() {
             /// Cette Méthode va décider du type de client

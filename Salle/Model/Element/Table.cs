@@ -4,20 +4,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Element{
-    public class Table {
+namespace Element
+{
+    public class Table
+    {
 
-        public Table() {
-        }
+        public int NbPlaceLibre { get; set; }
 
-        public int NbPlaceLibre;
+        public bool Utilisé { get; set; }
 
-        public bool Utilisé;
+        public string Etat { get; set; }
+        public int ID { get; set; }
+
+
+        public Table(int Nb, bool Util, string Etat, int id)
+        {
+
+            this.NbPlaceLibre = Nb;
+            this.Utilisé = Util;
+            this.Etat = Etat;
+            this.ID = id;
 
 
 
-        public void etat() {
-            // TODO implement here
         }
 
     }

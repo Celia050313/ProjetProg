@@ -7,8 +7,15 @@ using System.Text;
 namespace Element{
     public class ElemenT_ {
 
-        public ElemenT_() {
 
+        public string Etat { get; set; }
+        public int ID { get; set; }
+
+
+        public ElemenT_(int id, string etat)
+        {
+            this.ID = id;
+            this.Etat = etat;
 
         }
 
@@ -17,7 +24,7 @@ namespace Element{
         /// <summary>
         /// @return
         /// </summary>
-        
+
 
     }
 }
