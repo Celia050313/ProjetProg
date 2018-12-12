@@ -13,7 +13,7 @@ namespace ControllerSimulation{
 
         public void paie() {
             Random alea = new Random();
-            int prix = alea.Next(21);
+            int prix = alea.Next(8,21);
         }
 
         public void ordonner() {
@@ -25,12 +25,14 @@ namespace ControllerSimulation{
         }
 
         public void groupe() {
+
             Random alea = new Random();
             int aleaFin = alea.Next(0, 19);
             int nbClient = 0;
             bool arrivee = false;
             int pourcentage = alea.Next(19);
-
+            
+            
             if (arrivee == true)
             {
                 if (aleaFin <= 4)
@@ -62,25 +64,28 @@ namespace ControllerSimulation{
         }
     }
 
-        public void ordre() {
-            // TODO implement here
-        }
-
-        public void wait() {
-            bool statut = true; 
-        }
-
-        public void reserver() {
-            bool reservation;
-            Random alea = new Random();
-            int aleaRnd = alea.Next(0,5);
-            if (aleaRnd <= 3)
-            {
-                reservation = false;
-            }
-            else reservation = true;
-            Console.WriteLine(reservation);
-        }
-
+    public void ordre()
+    {
+        // TODO implement here
     }
+
+    public void wait()
+    {
+        bool statut = true;
+    }
+
+    public void reserver()
+    {
+        bool reservation;
+        Random alea = new Random();
+        int aleaRnd = alea.Next(0, 5);
+        if (aleaRnd <= 3)
+        {
+            reservation = false;
+        }
+        else reservation = true;
+        Console.WriteLine(reservation);
+    }
+
+}
 }
