@@ -19,15 +19,18 @@ namespace Model
 
         //var TabClient = new List<Client>();
 
-        public object[] TabChefRang;
-        public object[] TabClient;
-        public object[] TabTable;
-        public object[] TabCommande;
-        public object[] TabServeur;
-        public object[] TabMaitre;
-        private object temporaire;
 
-        public object[] TabCommis;
+        List<Client> TabClient = new List<Client>();
+        List<ChefDeRang> TabChefRang = new List<ChefDeRang>();
+        List<Table> TabTable = new List<Table>();
+        List<ElemenT_> TabCommande = new List<ElemenT_>();
+        List<Serveur> TabServeur = new List<Serveur>();
+        List<MaitreHotel> TabMaitre = new List<MaitreHotel>();
+        List<Commis> TabCommis = new List<Commis>();
+
+      ///  private object temporaire;
+
+
 
        /* public ElemenT_ createCommande(int id)
         {
@@ -72,69 +75,73 @@ namespace Model
         public Table createTable(int id)
         {
             Table tbl = new Table(4,false,"attente",id);
-            ObjectDumper.Dumper.Dump();
             return tbl;
         }
         */
-        public Factory(int obj)
+        public Factory(int obj, string objet)
         {
-            this.ObjACreer = obj;
-            for (int i = 0; i < ObjACreer; i++)
+         
+            for (int i = 0; i <obj; i++)
             {
-                Random random = new Random();
-                int ob = random.Next(1, 7);
+
+               /* Random random = new Random();
+                int ob = random.Next(1, 7);*/
 
 
 
-                switch (ob) {
-                    case 1:
+                switch (objet) {
+                    case "Table":
                         IDTable++;
                         Table tbl = new Table(4, false, "attente", IDTable);
-                        TabMaitre[IDTable - 1] = tbl;
-
-
-
+                        TabTable.Add(tbl);
                         break;
-                    case 2:
+
+                    case "MaitreHotel":
                         IDMaitre++;
                         MaitreHotel MH = new MaitreHotel(IDMaitre, "attente");
-                        TabMaitre[IDMaitre - 1] = MH;
+                         TabMaitre.Add(MH);
                         break;
-                    case 3:
+
+                    case "Client":
                         IDClient++;
-                        Client Client = new Client(IDClient, "attente");
-                        TabClient[IDClient - 1] = Client;
+                        Client Client = new Client(IDClient, "attente","cool","rapide");
+                        TabClient.Add(Client);
                         break;
-                    case 4:
+
+                    case "Commis":
                         IDCommis++;
-                        Commis Com = new Commis(IDCommis, "attente");
-                        TabCommis[IDCommis - 1] = Com;
-                        
+                        Commis Com = new Commis(IDCommis, "attente");                       
+                        TabCommis.Add(Com);
                         break;
-                    case 5:
+
+                    case "ChefRang":
                         IDChefRang++;
-                        ChefDeRang CR = new ChefDeRang(IDChefRang,"attente");
-                        TabChefRang[IDChefRang - 1] = CR;
+                        ChefDeRang CR = new ChefDeRang(IDChefRang,"attente");         
+                        TabChefRang.Add(CR);
                         break;
-                    case 6 when IDServeur<4 :
+
+                    case "Serveur" when IDServeur<4 :
                         IDServeur++;
                         if (IDServeur == 2)
                         { Serveur Ser = new Serveur(IDServeur, "attente", "Norbert");
-                            TabServeur[IDServeur - 1] = Ser;
+                           
+                            TabServeur.Add(Ser);
                         }
                         else
                         { Serveur Ser = new Serveur(IDServeur, "attente", "George");
-                            TabServeur[IDServeur - 1] = Ser;
+                   
+                            TabServeur.Add(Ser);
                         }
-
                         break;
-                    case 7:
+
+                    case "Commande":
                         IDCommande++;
                         ElemenT_ Elem = new ElemenT_(IDCommande, "attente");
-                        TabCommande[IDCommande - 1] = Elem ;
+                        TabCommande.Add(Elem);
                         break;
+
                     default:
-                        Console.WriteLine("=====ERROR=====");
+                        i--;
                         break;
 
 
@@ -144,33 +151,21 @@ namespace Model
 
 
             }
-            Console.WriteLine("Nbr Table = " + IDTable);
-            Console.WriteLine("-----------");
-            Console.WriteLine("Nbr Maitre = " + IDMaitre);
-            Console.WriteLine("-----------");
-            Console.WriteLine("Nbr Client = " + IDClient);
-            Console.WriteLine("-----------");
-            Console.WriteLine("Nbr Commis = " + IDCommis);
-            Console.WriteLine("-----------");
-            Console.WriteLine("Nbr ChefRang = " + IDChefRang);
-            Console.WriteLine("-----------");
-            Console.WriteLine("Nbr Serveur = " + IDServeur);
-            Console.WriteLine("-----------");
-            Console.WriteLine("Nbr Commande = " + IDCommande);
+            /*
+
+
+            Console.WriteLine("\nNom du Serveur avec l'ID 2 :  {0}", 
+                TabServeur.Find(x => x.ID == 2).Nom);
+
+            TabServeur.Find(x => x.ID == 2).Nom = "Bob";
+
+            Console.WriteLine("\nNom du Serveur avec l'ID 2 :  {0}",
+                TabServeur.Find(x => x.ID == 2).Nom);
+
+    */
 
 
 
-
-
-      
-
-
-
-
-
-
-
-            
         }
 
 

@@ -10,17 +10,21 @@ namespace Element{
 
         public int ID { get; set; }
         public string Etat { get; set; }
-
-        public Client(int id, string etat)
-        {
-            this.ID = id;
-            this.Etat = etat;
-
-        }
-
         public string Type { get; set; }
 
         public string typeCommande { get; set; }
+
+        public Client(int id, string etat,string type, string typeComm)
+        {
+            this.ID = id;
+            this.Etat = etat;
+            this.Type = type;
+            this.typeCommande = typeComm;
+
+
+        }
+
+
 
 
         public void gout() {
