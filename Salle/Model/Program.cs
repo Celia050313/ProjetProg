@@ -7,8 +7,17 @@ namespace Model
     {
         static void Main(string[] args)
         {
-            Factory factory = new Factory(50);
-            if(factory==null)
+            Factory factory = new Factory(5,"Table");
+
+
+
+            Console.WriteLine(factory.AccesElement("Table",2,"ID"));
+
+
+
+
+
+            if (factory==null)
             { Console.WriteLine("YouSK2"); };
 
         }

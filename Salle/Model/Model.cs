@@ -5,10 +5,13 @@ using System.Linq;
 using System.Text;
 
 
-namespace Model{
-    public class Model : IModel, IObserver {
+namespace Model
+{
+    public class Model : IModel/*, System.IObserver*/
+    {
 
-        public Model() {
+        public Model()
+        {
         }
 
 
@@ -23,7 +26,8 @@ namespace Model{
         /// <summary>
         /// @return
         /// </summary>
-        
 
 
+
+    }
 }

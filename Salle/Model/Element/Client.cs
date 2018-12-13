@@ -5,21 +5,18 @@ using System.Linq;
 using System.Text;
 
 namespace Element{
-    public class Client {
+    public class Client : _Element{
 
-
-        public int ID { get; set; }
-        public string Etat { get; set; }
         public string Type { get; set; }
 
         public string typeCommande { get; set; }
 
         public Client(int id, string etat,string type, string typeComm)
         {
-            this.ID = id;
-            this.Etat = etat;
-            this.Type = type;
-            this.typeCommande = typeComm;
+            ID = id;
+            Etat = etat;
+            Type = type;
+            typeCommande = typeComm;
 
 
         }

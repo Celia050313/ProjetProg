@@ -5,18 +5,15 @@ using System.Linq;
 using System.Text;
 
 namespace Element{
-    public class ElemenT_ {
+    public class _Element {
 
 
         public string Etat { get; set; }
         public int ID { get; set; }
 
 
-        public ElemenT_(int id, string etat)
+        public _Element()
         {
-            this.ID = id;
-            this.Etat = etat;
-
         }
 
 

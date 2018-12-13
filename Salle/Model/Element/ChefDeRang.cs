@@ -5,16 +5,14 @@ using System.Linq;
 using System.Text;
 
 namespace Element{
-    public class ChefDeRang {
+    public class ChefDeRang : _Element{
 
 
-        public int ID { get; set; }
-        public string Etat { get; set; }
 
         public ChefDeRang(int id, string etat)
         {
-            this.ID = id;
-            this.Etat = etat;
+            ID = id;
+            Etat = etat;
 
         }
 

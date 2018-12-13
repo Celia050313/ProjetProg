@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 using Element;
+using System.Reflection;
 
 namespace Model
 {
     public class Factory
     {
-        public int ObjACreer;
-
         public int IDClient = 0;
         public int IDCommis = 0;
         public int IDChefRang = 0;
@@ -23,61 +22,130 @@ namespace Model
         List<Client> TabClient = new List<Client>();
         List<ChefDeRang> TabChefRang = new List<ChefDeRang>();
         List<Table> TabTable = new List<Table>();
-        List<ElemenT_> TabCommande = new List<ElemenT_>();
+        List<_Element> TabCommande = new List<_Element>();
         List<Serveur> TabServeur = new List<Serveur>();
         List<MaitreHotel> TabMaitre = new List<MaitreHotel>();
         List<Commis> TabCommis = new List<Commis>();
 
-      ///  private object temporaire;
+        ///  private object temporaire;
 
 
 
-       /* public ElemenT_ createCommande(int id)
+        /* public ElemenT_ createCommande(int id)
+         {
+             ElemenT_ Elem = new ElemenT_(id, "attente");
+             return Elem;
+         }
+
+         public Commis createCommis(int id)
+         {
+             Commis Com = new Commis(id, "attente");
+             return Com;
+
+         }
+
+
+         public Serveur createServeur(int id)
+         {
+             Serveur Ser = new Serveur(id,"attente","George");
+             return Ser;
+
+         }
+
+         public Serveur createServeur(int id, string nm)
+         {
+             Serveur Ser = new Serveur(id, "attente", nm);
+             return Ser;
+
+         }
+
+         public Client createClient(int id)
+         {
+             Client Client = new Client(id, "attente");
+             return Client;
+         }
+
+         public MaitreHotel createMaitreHotel(int id)
+         {
+             MaitreHotel MH = new MaitreHotel(id, "attente");
+             return MH;
+         }
+
+         public Table createTable(int id)
+         {
+             Table tbl = new Table(4,false,"attente",id);
+             return tbl;
+         }
+         */
+
+        public object container;
+
+        public object AccesElement(string element, int id, string champ)
         {
-            ElemenT_ Elem = new ElemenT_(id, "attente");
-            return Elem;
+            switch (element)
+            {
+                case "Table":
+                    Type tTable = typeof(Table);
+                    PropertyInfo PITable = tTable.GetProperty(champ);
+                    container = PITable.GetValue(TabTable.Find(x => x.ID == id));
+                    return container;
+                    
+
+                case "MaitreHotel":
+                    Type tMaitre = typeof(MaitreHotel);
+                    PropertyInfo PIMaitre = tMaitre.GetProperty(champ);
+                    container = PIMaitre.GetValue(TabMaitre.Find(x => x.ID == id));
+                    return container;
+
+
+
+                case "Client":
+
+                    Type tClient = typeof(Table);
+                    PropertyInfo PICLient = tClient.GetProperty(champ);
+                    container = PICLient.GetValue(TabClient.Find(x => x.ID == id));
+                    return container;
+
+
+                case "Commis":
+
+                    Type tCommis = typeof(Table);
+                    PropertyInfo PICommis = tCommis.GetProperty(champ);
+                    container = PICommis.GetValue(TabCommis.Find(x => x.ID == id));
+                    return container;
+
+
+                case "ChefRang":
+
+                    Type tChefRang = typeof(Table);
+                    PropertyInfo PIChefRang = tChefRang.GetProperty(champ);
+                    container = PIChefRang.GetValue(TabChefRang.Find(x => x.ID == id));
+                    return container;
+
+
+                case "Serveur":
+
+                    Type tServeur = typeof(Table);
+                    PropertyInfo PIServeur = tServeur.GetProperty(champ);
+                    container = PIServeur.GetValue(TabServeur.Find(x => x.ID == id));
+                    return container;
+
+
+                case "Commande":
+                    Type tCommande = typeof(Table);
+                    PropertyInfo PICommande = tCommande.GetProperty(champ);
+                    container = PICommande.GetValue(TabCommande.Find(x => x.ID == id));
+                    return container;
+
+
+                default:
+                    return "ERROR";
+                    
+            }
         }
 
-        public Commis createCommis(int id)
-        {
-            Commis Com = new Commis(id, "attente");
-            return Com;
 
-        }
-        
 
-        public Serveur createServeur(int id)
-        {
-            Serveur Ser = new Serveur(id,"attente","George");
-            return Ser;
-
-        }
-
-        public Serveur createServeur(int id, string nm)
-        {
-            Serveur Ser = new Serveur(id, "attente", nm);
-            return Ser;
-
-        }
-
-        public Client createClient(int id)
-        {
-            Client Client = new Client(id, "attente");
-            return Client;
-        }
-
-        public MaitreHotel createMaitreHotel(int id)
-        {
-            MaitreHotel MH = new MaitreHotel(id, "attente");
-            return MH;
-        }
-
-        public Table createTable(int id)
-        {
-            Table tbl = new Table(4,false,"attente",id);
-            return tbl;
-        }
-        */
         public Factory(int obj, string objet)
         {
          
@@ -136,8 +204,8 @@ namespace Model
 
                     case "Commande":
                         IDCommande++;
-                        ElemenT_ Elem = new ElemenT_(IDCommande, "attente");
-                        TabCommande.Add(Elem);
+                        Commande Comd = new Commande(IDCommande, "attente");
+                        TabCommande.Add(Comd);
                         break;
 
                     default:
