@@ -5,20 +5,18 @@ namespace Model
 {
     class Program
     {
-        static void Main(string[] args)
+
+        private static string Element = "Serveur";
+        private static string Champ = "Nom";
+        
+    static void Main(string[] args)
         {
-            Factory factory = new Factory(5,"Table");
+            Factory factory = new Factory(4, Element);
+
+            Console.WriteLine(factory.AccesElement(Element, 2, Champ));
+            Console.WriteLine(factory.AccesElement(Element, 3, Champ));
 
 
-
-            Console.WriteLine(factory.AccesElement("Table",2,"ID"));
-
-
-
-
-
-            if (factory==null)
-            { Console.WriteLine("YouSK2"); };
 
         }
     }

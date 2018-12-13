@@ -101,7 +101,14 @@ namespace Model
 
                 case "Client":
 
-                    Type tClient = typeof(Table);
+                    Type tClient = typeof(Client);
+
+                    Console.WriteLine(champ);
+                   /* PropertyInfo[] PICLients = tClient.GetProperties();
+                    Console.WriteLine("------");
+                    foreach (PropertyInfo prop in PICLients)
+                    { Console.WriteLine("\n" + prop); }
+                    Console.WriteLine("------");*/
                     PropertyInfo PICLient = tClient.GetProperty(champ);
                     container = PICLient.GetValue(TabClient.Find(x => x.ID == id));
                     return container;
@@ -109,7 +116,7 @@ namespace Model
 
                 case "Commis":
 
-                    Type tCommis = typeof(Table);
+                    Type tCommis = typeof(Commis);
                     PropertyInfo PICommis = tCommis.GetProperty(champ);
                     container = PICommis.GetValue(TabCommis.Find(x => x.ID == id));
                     return container;
@@ -117,7 +124,7 @@ namespace Model
 
                 case "ChefRang":
 
-                    Type tChefRang = typeof(Table);
+                    Type tChefRang = typeof(ChefDeRang);
                     PropertyInfo PIChefRang = tChefRang.GetProperty(champ);
                     container = PIChefRang.GetValue(TabChefRang.Find(x => x.ID == id));
                     return container;
@@ -125,14 +132,14 @@ namespace Model
 
                 case "Serveur":
 
-                    Type tServeur = typeof(Table);
+                    Type tServeur = typeof(Serveur);
                     PropertyInfo PIServeur = tServeur.GetProperty(champ);
                     container = PIServeur.GetValue(TabServeur.Find(x => x.ID == id));
                     return container;
 
 
                 case "Commande":
-                    Type tCommande = typeof(Table);
+                    Type tCommande = typeof(Commande);
                     PropertyInfo PICommande = tCommande.GetProperty(champ);
                     container = PICommande.GetValue(TabCommande.Find(x => x.ID == id));
                     return container;
@@ -172,6 +179,7 @@ namespace Model
 
                     case "Client":
                         IDClient++;
+                        
                         Client Client = new Client(IDClient, "attente","cool","rapide");
                         TabClient.Add(Client);
                         break;
@@ -188,17 +196,22 @@ namespace Model
                         TabChefRang.Add(CR);
                         break;
 
-                    case "Serveur" when IDServeur<4 :
+                    case "Serveur" :
                         IDServeur++;
-                        if (IDServeur == 2)
-                        { Serveur Ser = new Serveur(IDServeur, "attente", "Norbert");
-                           
-                            TabServeur.Add(Ser);
-                        }
-                        else
-                        { Serveur Ser = new Serveur(IDServeur, "attente", "George");
-                   
-                            TabServeur.Add(Ser);
+                        if (IDServeur < 4)
+                        {
+                            if (IDServeur == 2)
+                            {
+                                Serveur Ser = new Serveur(IDServeur, "attente", "Norbert");
+
+                                TabServeur.Add(Ser);
+                            }
+                            else
+                            {
+                                Serveur Ser = new Serveur(IDServeur, "en service", "George");
+
+                                TabServeur.Add(Ser);
+                            }
                         }
                         break;
 
