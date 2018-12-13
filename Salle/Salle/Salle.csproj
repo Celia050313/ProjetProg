@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="ClientSocket.cs" />
     <Compile Include="ObjectSerialize.cs" />
-    <Compile Include="Plat.cs" />
+    <Compile Include="Commande.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

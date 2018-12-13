@@ -7,8 +7,14 @@ using System.Threading.Tasks;
 namespace Salle
 {
     [Serializable]
-    public class Plat
+    public class Commande
     {
         public int Type;
+
+        public int numTable;
+
+        public int nbPers;
+
+        public int statut;
     }
 }

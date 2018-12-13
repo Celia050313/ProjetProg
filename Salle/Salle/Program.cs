@@ -12,7 +12,7 @@ namespace Salle
     {
         static int Main(string[] args)
         {
-            ClientSocket.StartClient();
+            ClientSocket.StartClient(2);
             return 0;
         }
     }

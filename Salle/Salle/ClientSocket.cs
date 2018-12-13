@@ -8,7 +8,7 @@ namespace Salle
 {
     class ClientSocket
     {
-        public static void StartClient()
+        public static void StartClient(int action)
         {
             // Data buffer for incoming data.  
             byte[] bytes = new byte[1024];
@@ -16,8 +16,7 @@ namespace Salle
             // Connect to a remote device.  
             try
             {
-                // Establish the remote endpoint for the socket.  
-                // This example uses port 11000 on the local computer.  
+                // Establish the remote endpoint for the socket.
                 IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
                 IPAddress ipAddress = ipHostInfo.AddressList[0];
                 IPEndPoint remoteEP = new IPEndPoint(ipAddress, 11000);
@@ -34,14 +33,32 @@ namespace Salle
                     Console.WriteLine("Socket connected to {0}",
                         sender.RemoteEndPoint.ToString());
 
-                    // Encode the data string into a byte array.  
+                    // Encode the data depending on the action expected
+
+                    byte[] message = null;
+
+                    switch (action) {
+                        case 1:
+                            message = BitConverter.GetBytes(10);
+                            break;
+
+                        case 2:
+                             var commande = new Commande { Type = 1, numTable = 3, nbPers = 3, statut = 1};
+                            message = commande.Serialize();
+
+                            break;
+
+                        default:
+                            Console.WriteLine("Erreur");
+                            break;
+                    }
+
+
                     //byte[] msg = Encoding.ASCII.GetBytes("This is a test<EOF>");
 
-                    var plat = new Plat { Type = 1 };
-                    byte[] serialized = plat.Serialize();
 
                     // Send the data through the socket.  
-                    int bytesSent = sender.Send(serialized);
+                    sender.Send(message);
                     Console.WriteLine("Test");
 
                     // Receive the response from the remote device.  

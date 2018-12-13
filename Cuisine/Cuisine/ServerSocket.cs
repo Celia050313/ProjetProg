@@ -11,6 +11,8 @@ namespace Cuisine
         // Incoming data from the client.  
         public static string data = null;
 
+        public static long compteurLinge= 0;
+
 
         public static void StartListening()
         {
@@ -48,26 +50,33 @@ namespace Cuisine
                     {
 
                         int bytesRec = handler.Receive(bytes);
-                        bytes.DeSerialize();
-                        Console.WriteLine("Test");
-                        data += Encoding.ASCII.GetString(bytes, 0, bytesRec);
-                        
-                       
 
-                        if (data.IndexOf("<EOF>") > -1)
-                        {
-                            break;
-                        }
+                        //compteurLinge = BitConverter.ToInt32(bytes, 0);
+
+                        //data += Encoding.ASCII.GetString(bytes, 0, bytesRec);
+                        
+                        bytes.DeSerialize();
+
+                        Console.WriteLine("Test");
+
+
+
+
+
+                        // if (data.IndexOf("<EOF>") > -1)
+                        // {
+                        break;
+                        //}
                     }
 
 
                     // Show the data on the console.  
 
-                    Console.WriteLine("Text received : {0}", data);
+                    Console.WriteLine("Text received : {0}", bytes);
 
 
                     // Echo the data back to the client.  
-                    byte[] msg = Encoding.ASCII.GetBytes(data);
+                    byte[] msg = Encoding.ASCII.GetBytes("This is a test<EOF>");
 
                     handler.Send(msg);
                     handler.Shutdown(SocketShutdown.Both);
