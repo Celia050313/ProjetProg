@@ -53,10 +53,7 @@ namespace Salle
                             break;
                     }
 
-
-                    //byte[] msg = Encoding.ASCII.GetBytes("This is a test<EOF>");
-
-
+                    
                     // Send the data through the socket.  
                     sender.Send(message);
                     Console.WriteLine("Test");

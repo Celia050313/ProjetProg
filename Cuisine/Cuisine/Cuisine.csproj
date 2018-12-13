@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Salle">
+      <HintPath>..\..\..\..\..\Desktop\Salle.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ObjectSerialize.cs" />
-    <Compile Include="Plat.cs" />
+    <Compile Include="Plongeur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServerSocket.cs" />

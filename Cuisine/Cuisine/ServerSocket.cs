@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Text;
 using System.Net;
 using System.Net.Sockets;
+using Salle;
 
 namespace Cuisine
 {
     class ServerSocket
     {
         // Incoming data from the client.  
-        public static string data = null;
+        public static long action= 0;
 
-        public static long compteurLinge= 0;
+        public static Salle.Commande comm;
 
 
         public static void StartListening()
@@ -35,48 +36,43 @@ namespace Cuisine
             try
             {
                 listener.Bind(localEndPoint);
-                listener.Listen(1);
+                listener.Listen(10);
 
                 // Start listening for connections.  
                 while (true)
                 {
                     Console.WriteLine("Waiting for a connection...");
+
                     // Program is suspended while waiting for an incoming connection.  
                     Socket handler = listener.Accept();
-                    data = null;
 
                     // An incoming connection needs to be processed.  
                     while (true)
                     {
-
-                        int bytesRec = handler.Receive(bytes);
-
-                        //compteurLinge = BitConverter.ToInt32(bytes, 0);
-
-                        //data += Encoding.ASCII.GetString(bytes, 0, bytesRec);
                         
-                        bytes.DeSerialize();
+                        handler.Receive(bytes);
 
-                        Console.WriteLine("Test");
+                        action = BitConverter.ToInt32(bytes, 0);
 
+                        if ( action == 10)
+                        {
+                            Plongeur.demarrerLaveLinge();
+                            Console.WriteLine("Lave Linge démarré");
+                        }
+                        else
+                        {
+                            comm = (Salle.Commande)bytes.DeSerialize();
 
+                            Console.WriteLine("Text received : {0}", comm.nbPers);
+                        }
 
+                                                                      
 
-
-                        // if (data.IndexOf("<EOF>") > -1)
-                        // {
                         break;
-                        //}
                     }
-
-
-                    // Show the data on the console.  
-
-                    Console.WriteLine("Text received : {0}", bytes);
-
-
-                    // Echo the data back to the client.  
-                    byte[] msg = Encoding.ASCII.GetBytes("This is a test<EOF>");
+                                                                          
+                    // Send the response to the client.  
+                    byte[] msg = Encoding.ASCII.GetBytes("All good<EOF>");
 
                     handler.Send(msg);
                     handler.Shutdown(SocketShutdown.Both);
