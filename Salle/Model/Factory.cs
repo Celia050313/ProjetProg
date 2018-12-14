@@ -151,7 +151,76 @@ namespace Model
             }
         }
 
+        public void ModifElement(string element, int id, string champ,object value)
+        {
+            switch (element)
+            {
+                case "Table":
+                    Type tTable = typeof(Table);
+                    PropertyInfo PITable = tTable.GetProperty(champ);
+                    PITable.SetValue(TabTable.Find(x => x.ID == id),value);
+                    break;
 
+
+                case "MaitreHotel":
+                    Type tMaitre = typeof(MaitreHotel);
+                    PropertyInfo PIMaitre = tMaitre.GetProperty(champ);
+                    PIMaitre.SetValue(TabMaitre.Find(x => x.ID == id),value);
+                    break;
+
+
+
+                case "Client":
+
+                    Type tClient = typeof(Client);
+
+                    Console.WriteLine(champ);
+                    /* PropertyInfo[] PICLients = tClient.GetProperties();
+                     Console.WriteLine("------");
+                     foreach (PropertyInfo prop in PICLients)
+                     { Console.WriteLine("\n" + prop); }
+                     Console.WriteLine("------");*/
+                    PropertyInfo PICLient = tClient.GetProperty(champ);
+                    PICLient.SetValue(TabClient.Find(x => x.ID == id),value);
+                    break;
+
+
+                case "Commis":
+
+                    Type tCommis = typeof(Commis);
+                    PropertyInfo PICommis = tCommis.GetProperty(champ);
+                    PICommis.SetValue(TabCommis.Find(x => x.ID == id),value);
+                    break;
+
+
+                case "ChefRang":
+
+                    Type tChefRang = typeof(ChefDeRang);
+                    PropertyInfo PIChefRang = tChefRang.GetProperty(champ);
+                    PIChefRang.SetValue(TabChefRang.Find(x => x.ID == id),value);
+                    break;
+
+
+                case "Serveur":
+
+                    Type tServeur = typeof(Serveur);
+                    PropertyInfo PIServeur = tServeur.GetProperty(champ);
+                    PIServeur.SetValue(TabServeur.Find(x => x.ID == id),value);
+                    break;
+
+
+                case "Commande":
+                    Type tCommande = typeof(Commande);
+                    PropertyInfo PICommande = tCommande.GetProperty(champ);
+                    PICommande.SetValue(TabCommande.Find(x => x.ID == id),value);
+                    break;
+
+
+                default:
+                    break;
+
+            }
+        }
 
         public Factory(int obj, string objet)
         {
