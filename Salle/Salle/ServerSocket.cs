@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
-using Salle;
 
-namespace Cuisine
+namespace Salle
 {
     class ServerSocket
     {
         // Incoming data from the client.  
-        public static long action= 0;
+        public static long action = 0;
 
-        public static Salle.Commande comm;
+        public static Commande commandePrete;
 
 
         public static void StartListening()
@@ -25,7 +26,7 @@ namespace Cuisine
             // host running the application.  
             IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
             IPAddress ipAddress = ipHostInfo.AddressList[0];
-            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
+            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 12000);
 
             // Create a TCP/IP socket.  
             Socket listener = new Socket(ipAddress.AddressFamily,
@@ -49,31 +50,24 @@ namespace Cuisine
                     // An incoming connection needs to be processed.  
                     while (true)
                     {
-                        
+
                         handler.Receive(bytes);
 
                         action = BitConverter.ToInt32(bytes, 0);
 
-                        if ( action == 10)
-                        {
-                            Plongeur.demarrerLaveLinge();
-                            Console.WriteLine("Lave Linge démarré");
-                        }
-                        else
-                        {
-                            comm = (Salle.Commande)bytes.DeSerialize();
+                        commandePrete = (Commande)bytes.DeSerialize();
 
                             //TODO start metod that prepares meals
-                            
 
-                            Console.WriteLine("Text received : {0}", comm.statut);
-                        }
 
-                                                                      
+                        Console.WriteLine("Text received : {0}", commandePrete.statut);
+                        
+
+
 
                         break;
                     }
-                                                                          
+
                     // Send the response to the client.  
                     byte[] msg = Encoding.ASCII.GetBytes("All good<EOF>");
 

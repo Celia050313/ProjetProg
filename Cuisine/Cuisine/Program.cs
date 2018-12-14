@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
+using System.Threading;
 
 namespace Cuisine
 {
@@ -12,10 +13,20 @@ namespace Cuisine
     {
         static int Main(string[] args)
         {
-            ServerSocket.StartListening();
+            Thread Client = new Thread(ClientSocket.StartClient);
+            Thread Server = new Thread(ServerSocket.StartListening);
+
+            Server.Start();
+
+            Thread.Sleep(10000);
+            Client.Start();
+           // ServerSocket.StartListening();
+            //ClientSocket.StartClient();
             return 0;
 
             // FINALIZE
         }
+
+
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
+using System.Threading;
 
 namespace Salle
 {
@@ -12,6 +13,9 @@ namespace Salle
     {
         static int Main(string[] args)
         {
+            Thread Server = new Thread(ServerSocket.StartListening);
+            Server.Start();
+
             ClientSocket.StartClient(2);
             return 0;
         }

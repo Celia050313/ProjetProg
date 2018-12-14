@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientSocket.cs" />
     <Compile Include="ObjectSerialize.cs" />
     <Compile Include="Plongeur.cs" />
     <Compile Include="Program.cs" />
