@@ -13,10 +13,13 @@ namespace Salle
     {
         static int Main(string[] args)
         {
-            Thread Server = new Thread(ServerSocket.StartListening);
-            Server.Start();
+            Thread ServerSalle = new Thread(ServerSocket.StartListening);
+            Thread ClientSalle = new Thread(new ParameterizedThreadStart(ClientSocket.StartClient));
 
-            ClientSocket.StartClient(2);
+            ServerSalle.Start();
+
+            Thread.Sleep(10000);
+            ClientSalle.Start(2);
             return 0;
         }
     }

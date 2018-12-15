@@ -8,45 +8,41 @@ using Salle;
 namespace Cuisine
 {
     class ServerSocket
-    {
-        // Incoming data from the client.  
+    {  
         public static long action= 0;
 
-        public static Salle.Commande comm;
+        public static Salle.Commande commande;
 
 
         public static void StartListening()
         {
-            // Data buffer for incoming data.  
+            // Buffer pour les données entrantes
             byte[] bytes = new Byte[1024];
 
-            // Establish the local endpoint for the socket.  
-            // Dns.GetHostName returns the name of the   
-            // host running the application.  
+            // Récupère les données nécessaires pour la création et le fonctionnement de la socket serveur  
             IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
             IPAddress ipAddress = ipHostInfo.AddressList[0];
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
 
-            // Create a TCP/IP socket.  
-            Socket listener = new Socket(ipAddress.AddressFamily,
-                SocketType.Stream, ProtocolType.Tcp);
+            // Création de la socket TCP/IP  
+            Socket listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
-            // Bind the socket to the local endpoint and   
-            // listen for incoming connections.  
+             
             try
             {
+                // Lie la socket au point de terminaison et commence l'écoute sur le port
                 listener.Bind(localEndPoint);
                 listener.Listen(10);
 
-                // Start listening for connections.  
+                //Attend la connexion d'un client 
                 while (true)
                 {
                     Console.WriteLine("Waiting for a connection...");
 
-                    // Program is suspended while waiting for an incoming connection.  
+                    // Accepte les connexions entrantes
                     Socket handler = listener.Accept();
 
-                    // An incoming connection needs to be processed.  
+                    //Reçoit les données et détermine quelle action effectuer
                     while (true)
                     {
                         
@@ -61,12 +57,12 @@ namespace Cuisine
                         }
                         else
                         {
-                            comm = (Salle.Commande)bytes.DeSerialize();
+                            commande = (Salle.Commande)bytes.DeSerialize();
 
                             //TODO start metod that prepares meals
                             
 
-                            Console.WriteLine("Text received : {0}", comm.statut);
+                            Console.WriteLine("Text received : {0}", commande.statut);
                         }
 
                                                                       
@@ -74,10 +70,11 @@ namespace Cuisine
                         break;
                     }
                                                                           
-                    // Send the response to the client.  
+                    //Répond au client  
                     byte[] msg = Encoding.ASCII.GetBytes("All good<EOF>");
-
                     handler.Send(msg);
+
+                    //Libère les sockets
                     handler.Shutdown(SocketShutdown.Both);
                     handler.Close();
                 }

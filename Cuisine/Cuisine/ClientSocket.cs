@@ -12,47 +12,43 @@ namespace Cuisine
     {
         public static void StartClient()
         {
-            // Data buffer for incoming data.  
+            //Buffer pour les données entrantes 
             byte[] bytes = new byte[1024];
 
-            // Connect to a remote device.  
+            //Connection à un serveur 
             try
             {
-                // Establish the remote endpoint for the socket.
+                //Récupère les informations du serveur 
                 IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
                 IPAddress ipAddress = ipHostInfo.AddressList[0];
                 IPEndPoint remoteEP = new IPEndPoint(ipAddress, 12000);
 
-                // Create a TCP/IP  socket.  
-                Socket sender = new Socket(ipAddress.AddressFamily,
-                    SocketType.Stream, ProtocolType.Tcp);
+                //Création d'une socket TCP/IP  
+                Socket sender = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
-                // Connect the socket to the remote endpoint. Catch any errors.  
+                
                 try
-                {
+                {   //Se connecte au port distant 
                     sender.Connect(remoteEP);
 
-                    Console.WriteLine("Socket connected to {0}",
-                        sender.RemoteEndPoint.ToString());
+                    Console.WriteLine("Socket connected to {0}", sender.RemoteEndPoint.ToString());
 
-                    // Encode the data depending on the action expected
-
+                    //Encode les données
                     byte[] message = null;
 
-                            var commande = new Salle.Commande { Type = 1, numTable = 3, nbPers = 3, statut = 2 };
-                            message = commande.Serialize();
+                    var commande = new Salle.Commande { Type = 1, numTable = 3, nbPers = 3, statut = 2 };
+
+                    message = commande.Serialize();
 
 
-                    // Send the data through the socket.  
+                    //Envoie les données  
                     sender.Send(message);
-                    Console.WriteLine("Test");
 
-                    // Receive the response from the remote device.  
+                    //Reçoit la réponse du serveur 
                     int bytesRec = sender.Receive(bytes);
-                    Console.WriteLine("Echoed test = {0}",
-                        Encoding.ASCII.GetString(bytes, 0, bytesRec));
+                    Console.WriteLine("Echoed test = {0}",Encoding.ASCII.GetString(bytes, 0, bytesRec));
 
-                    // Release the socket.  
+                    //Libère la socket  
                     sender.Shutdown(SocketShutdown.Both);
                     sender.Close();
 

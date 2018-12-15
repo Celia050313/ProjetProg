@@ -13,15 +13,14 @@ namespace Cuisine
     {
         static int Main(string[] args)
         {
-            Thread Client = new Thread(ClientSocket.StartClient);
-            Thread Server = new Thread(ServerSocket.StartListening);
+            Thread ClientCuisine = new Thread(ClientSocket.StartClient);
+            Thread ServerCuisine = new Thread(ServerSocket.StartListening);
 
-            Server.Start();
+            ServerCuisine.Start();
 
             Thread.Sleep(10000);
-            Client.Start();
-           // ServerSocket.StartListening();
-            //ClientSocket.StartClient();
+            ClientCuisine.Start();
+
             return 0;
 
             // FINALIZE
