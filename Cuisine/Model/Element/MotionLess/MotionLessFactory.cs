@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Data.SqlClient;
 
 namespace Model.Element.Motionless{
     public class MotionLessFactory {
@@ -42,6 +42,7 @@ namespace Model.Element.Motionless{
                 default:
                     throw new System.Exception("Type de MachineCuisine non reconnu.");
             }
+            sqlconnection;
         }
 
         public void createChefDeCuisine() {

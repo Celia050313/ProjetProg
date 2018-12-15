@@ -16,12 +16,8 @@ namespace ControllerSimulation{
 
         public void demarrerLaveVaisselle() {
 
-            bool complete = false;
-            var t = new Thread(() =>
-            {
-                bool toggle = false;
-                while (!complete) toggle = !toggle;
-            });
+            int sleep = 5000;
+            ThreadStart dlv = new ThreadStart(dlv);
             t.Start();
             Thread.Sleep(1000);
             complete = true;
