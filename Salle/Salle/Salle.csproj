@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Salle</RootNamespace>
     <AssemblyName>Salle</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,6 +49,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControllerSimulation\ControllerSimulation.csproj">
+      <Project>{a4d2b402-6095-4ca4-8762-ac8c503d1205}</Project>
+      <Name>ControllerSimulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ControllerSupervision\ControllerSupervision.csproj">
+      <Project>{75d8f0e3-4c7c-4442-9466-8eee636d32b1}</Project>
+      <Name>ControllerSupervision</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{6b998273-e7b3-45c0-a841-b98445d1bbc9}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsFormsApp1\ViewWin.csproj">
+      <Project>{8a0b00cf-097f-411a-8232-f7deeeda54fb}</Project>
+      <Name>ViewWin</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -8,14 +8,37 @@ namespace ControllerSimulation
         public Plongeur() {
         }
 
+        bool allume = false;
 
-        public void demarrerLaveVaisselle(View.Element.Element LaveVaisselle) { 
-            // TODO implement here
+        private void AffStatus()
+        {
+            string status = (allume == true) ? "ON" : "OFF";
+            Console.WriteLine("La machine {0} est", status);
         }
 
-        public void demarrerLaveLinge() {
-            // TODO implement here
+        public bool DemarrerLaveVaisselle { 
+            get {
+                return allume;
+            }
+            set
+            {
+                allume = value;
+                AffStatus();
+            }
         }
+
+        public bool DemarrerLaveLinge {
+            get {
+                return allume;
+            }
+            set
+            {
+                allume = value;
+                AffStatus();
+            }           
+        }
+
+        
 
         public void debarrasserLaveLinge() {
             // TODO implement here

@@ -15,7 +15,7 @@ namespace View.Element.Motionless{
         /// <summary>
         /// @param img
         /// </summary>
-        public void MotionlessElements(void img) {
+        public void MotionlessElements(char img) {
             // TODO implement here
         }
 

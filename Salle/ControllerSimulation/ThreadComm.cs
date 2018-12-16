@@ -1,6 +1,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 
@@ -10,7 +11,7 @@ namespace ControllerSimulation{
         public ThreadComm() {
         }
 
-        private Bool disposed;
+        private bool disposed;
 
         public Component component;
 
@@ -30,10 +31,6 @@ namespace ControllerSimulation{
         }
 
         public void traitementThread() {
-            // TODO implement here
-        }
-
-        public void Operation2() {
             // TODO implement here
         }
 

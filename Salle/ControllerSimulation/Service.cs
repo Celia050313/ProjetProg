@@ -14,15 +14,7 @@ namespace ControllerSimulation{
         /// <summary>
         /// @return
         /// </summary>
-        public void sertPain() {
-            // TODO implement here
-            return null;
-        }
-
-        /// <summary>
-        /// @return
-        /// </summary>
-        public void sertEau() {
+        public void sertEauPain() {
             // TODO implement here
             return null;
         }
